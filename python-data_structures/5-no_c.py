@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def no_c(my_string):
+    new = ""
     for ch in my_string:
         if ch.upper() == 'C':
-            my_string = my_string.replace(ch, '')
-    return (my_string)
+            continue
+        new += ch
+    return (new)
