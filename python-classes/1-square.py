@@ -5,6 +5,6 @@
 class Square():
     """this is a class named square"""
 
-    def __init__(self, __size):
+    def __init__(self, size):
         """Instantiation with size (no type/value verification)"""
-        self.__size = __size
+        self.__size = size
