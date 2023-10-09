@@ -9,7 +9,7 @@ class Square():
         """
         initialize size otherwise displaying error message if the value of size is invalid
         attributes:
-        size: a private instance attribute
+        __size: a private instance attribute
         """
         self.__size = size
         if not isinstance(size, int):
