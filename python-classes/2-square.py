@@ -6,11 +6,7 @@ class Square():
     """this is a class named Square"""
 
     def __init__(self, size=0):
-        """
-        initialize size otherwise displaying error message if the value of size is invalid
-        Args:
-        size (int): the value of size
-        """
+        """initialize size otherwise displaying error message if the value of size is invalid"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
