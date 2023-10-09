@@ -1,34 +1,4 @@
 #!/usr/bin/python3
-"""create a class Square that defines a square with a private instance size"""
-
-
-class Square():
-    """this is a class named square"""
-
-    def __init__(self, __size):
-        """Instantiation with size (no type/value verification)"""
-        
-        self.__size = __size
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#!/usr/bin/python3
 """ create a class that defines Square and control the atrribute size"""
 
 
@@ -36,7 +6,9 @@ class Square():
     """this is a class named Square"""
 
     def __init__(self, size=0):
-        """initialize size otherwise displaying error message if the value of size is invalid"""
+        """
+        initialize size otherwise displaying error message if the value of size is invalid
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
