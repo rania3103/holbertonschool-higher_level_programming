@@ -3,7 +3,7 @@
 
 
 def add_integer(a, b=98):
-    """ display an message if there is an error otherwise add a + b"""
+    """ display a message if there is an error otherwise add a + b"""
     if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
     elif not isinstance(b, int) and not isinstance(b, float):
