@@ -13,12 +13,12 @@ def row_len(matrix):
     """return True if each row has the same length"""
     test = True
     i = 0
-    while i < len(matrix) - 1 :
+    while i < len(matrix) - 1:
         if len(matrix[i]) == len(matrix[i + 1]):
             i += 1
         else:
             test = False
-            break            
+            break
     return test
 
 
