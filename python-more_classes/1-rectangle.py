@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ define a class Rectangle with private instance
 attribute width/height"""
 
