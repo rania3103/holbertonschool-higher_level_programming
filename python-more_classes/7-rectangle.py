@@ -13,7 +13,7 @@ class Rectangle:
         each new instance instantiation"""
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
+        self.number_of_instances += 1
 
     @property
     def width(self):
@@ -67,7 +67,7 @@ class Rectangle:
                     if isinstance(self.print_symbol, (list, tuple, set, dict)):
                         ch += repr(self.print_symbol)
                     else:
-                        ch += self.print_symbol
+                        ch += str(self.print_symbol)
                 if i != self.__height - 1:
                     ch += "\n"
             return ch
@@ -83,4 +83,4 @@ class Rectangle:
         when an instance of Rectangle is deleted
         & decrement each deletion of an instance"""
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        self.number_of_instances -= 1
