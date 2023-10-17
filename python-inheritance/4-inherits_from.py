@@ -6,8 +6,8 @@ specified class ; otherwise False."""
 
 
 def inherits_from(obj, a_class):
-    """ this the function"""
-    if type(obj) == a_class:
+    """ this is the function"""
+    if type(obj) is a_class:
         return False
     elif isinstance(obj, a_class):
         return True
