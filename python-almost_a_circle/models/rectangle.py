@@ -19,7 +19,7 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
-    def width(self, width):
+    def width(self):
         """retrieve value of width """
         return self.__width
 
@@ -29,7 +29,7 @@ class Rectangle(Base):
         self.__width = width
 
     @property
-    def height(self, height):
+    def height(self):
         """retrieve value of height """
         return self.__height
 
@@ -39,7 +39,7 @@ class Rectangle(Base):
         self.__height = height
 
     @property
-    def x(self, x):
+    def x(self):
         """retrieve value of x """
         return self.__x
 
@@ -49,7 +49,7 @@ class Rectangle(Base):
         self.__x = x
 
     @property
-    def y(self, y):
+    def y(self):
         """retrieve value of y """
         return self.__y
 
