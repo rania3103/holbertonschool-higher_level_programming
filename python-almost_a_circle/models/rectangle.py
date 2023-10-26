@@ -7,14 +7,15 @@ class Rectangle(Base):
     """this is the class Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """initialize width,height,x,y and id"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
-        """super() is a builtin function that allow us to acces
+        """initialize width,height,x,y and id
+        super() is a builtin function that allow us to acces
         method of the Base class and then we can initialize id using __init__
-        because id is a part of Base not Rectangle"""
+        because id is a part of Base not Rectangle
+        """
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
