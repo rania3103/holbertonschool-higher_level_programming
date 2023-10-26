@@ -9,8 +9,9 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """initialize width,height,x,y and id
         super() is a builtin function that allow us to acces
-        method of the Base class and then we can initialize id using __init__
-        because id is a part of Base not Rectangle
+        method of the Base class and then we can initialize
+        id using __init__because id is a part of Base
+        not Rectangle
         """
         self.width = width
         self.height = height
@@ -57,4 +58,3 @@ class Rectangle(Base):
     def y(self, y):
         """set value to y"""
         self.__y = y
-
