@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Write the class Rectangle that inherits from Base"""
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -131,7 +131,8 @@ class Rectangle(Base):
         """return the dictionary representation of a Rectangle"""
         return {
             "x": self.x,
-            "y": self.y,
+            "width": self.width,
             "id": self.id,
             "height": self.height,
-            "width": self.width}
+            "y": self.y
+        }
