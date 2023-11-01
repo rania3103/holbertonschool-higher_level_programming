@@ -53,6 +53,6 @@ class Base:
         if cls.__name__ == "Square":
             dummy = cls(size=0)
         elif cls.__name__ == "Rectangle":
-            dummy = cls(width=0, height=0)
+            dummy = cls(height=0, width=0)
         dummy.update(**dictionary)
         return dummy
