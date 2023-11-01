@@ -61,9 +61,7 @@ class Base:
     def load_from_file(cls):
         """returns a list of instances"""
         filename = "{}.json".format(cls.__name__)
-        if filename is None:
-            return []
-        else:
+        try:
             with open(filename, "r") as f:
                 cont = f.read()
                 list = cls.from_json_string(cont)
@@ -72,3 +70,5 @@ class Base:
                     instan = cls.create(**dict)
                     instan_l.append(instan)
                 return instan_l
+        except FileNotFoundError:
+            return []
