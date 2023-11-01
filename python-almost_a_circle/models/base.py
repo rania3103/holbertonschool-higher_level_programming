@@ -56,10 +56,11 @@ class Base:
             dummy = cls(height=8, width=8)
         dummy.update(**dictionary)
         return dummy
+
     @classmethod
     def load_from_file(cls):
         """returns a list of instances"""
-        filename ="{}.json".format(cls.__name__)
+        filename = "{}.json".format(cls.__name__)
         if filename is None:
             return []
         else:
