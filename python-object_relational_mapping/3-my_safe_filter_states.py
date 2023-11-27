@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" a script that takes in an argument and displays
-all values in the states table of hbtn_0e_0_usa
-where name matches the argument."""
+""" write a script that takes in arguments and displays
+all values in the states table of hbtn_0e_0_usa where name
+matches the argument. But this time, write one that
+is safe from MySQL injections!"""
 from MySQLdb import connect
 from sys import argv
 
@@ -17,7 +18,7 @@ if __name__ == "__main__":
     )
     cur = db.cursor()
     cur.execute(
-        "SELECT * FROM states WHERE name = %s ORDER BY id;",(argv[4],))
+        "SELECT * FROM states WHERE name = %s ORDER BY id;", (argv[4],))
     res = cur.fetchall()
     for row in res:
         print(row)
