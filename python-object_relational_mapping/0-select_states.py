@@ -4,7 +4,7 @@ from MySQLdb import connect
 from sys import argv
 
 
-def list_info(username = argv[1], pwd = argv[2], dbname = argv[3]):
+def list_info(username , pwd, dbname):
     """conncet to db and run the query then print the result"""
     db = connect(
         host="localhost",
@@ -19,4 +19,4 @@ def list_info(username = argv[1], pwd = argv[2], dbname = argv[3]):
         print(row)
 
 if __name__ == "__main__":
-    list_info()
+    list_info(argv[1], argv[2], argv[3])
