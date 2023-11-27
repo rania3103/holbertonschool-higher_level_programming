@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """a script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa"""
-from MySQLdb import connect
+import MySQLdb
 from sys import argv
 
 
 def filter_info(username, pwd, dbname):
     """conncet to db and run the query then print the result"""
-    db = connect(
+    db = MySQLdb.connect(
         host="localhost",
         user=username,
         password=pwd,
