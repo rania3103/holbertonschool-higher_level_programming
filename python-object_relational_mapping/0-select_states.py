@@ -3,20 +3,16 @@
 from MySQLdb import connect
 from sys import argv
 
-
-def list_info(username , pwd, dbname):
+if __name__ == "__main__":
     """conncet to db and run the query then print the result"""
     db = connect(
         host="localhost",
-        user=username,
-        password=pwd,
-        database=dbname,
+        user=argv[1],
+        password=argv[2],
+        database=argv[3],
         port=3306)
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id;")
     res = cur.fetchall()
     for row in res:
         print(row)
-
-if __name__ == "__main__":
-    list_info(argv[1], argv[2], argv[3])
