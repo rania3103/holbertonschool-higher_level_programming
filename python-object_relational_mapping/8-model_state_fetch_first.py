@@ -12,7 +12,7 @@ if __name__ == "__main__":
     make_session = sessionmaker(bind=engine)
     session = make_session()
     res = session.query(State).order_by(State.id).first()
-    if res == "":
+    if res is None:
         print("Nothing\n")
     else:
         print("{}: {}".format(res.id, res.name))
