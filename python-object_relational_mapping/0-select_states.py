@@ -2,6 +2,7 @@
 """a script that lists all states from the database """
 from MySQLdb import connect
 from sys import argv
+
 if __name__ == "__main__":
     """conncet to db and run the query then print the result"""
     db = connect(
