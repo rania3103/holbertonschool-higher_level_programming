@@ -4,7 +4,7 @@ and 2 public instance methods and print rectangle"""
 
 
 class Rectangle:
-    """this is the class Rectangle"""
+    """this is the class Rectangle """
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
