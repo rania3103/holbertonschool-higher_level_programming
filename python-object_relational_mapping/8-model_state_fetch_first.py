@@ -13,6 +13,6 @@ if __name__ == "__main__":
     session = make_session()
     res = session.query(State).order_by(State.id).first()
     if res is None:
-        print("Nothing\n")
+        print("Nothing")
     else:
         print("{}: {}".format(res.id, res.name))
