@@ -17,4 +17,4 @@ if __name__ == "__main__":
         State.name, City.id, City.name).join(
         City, State.id == City.state_id).all()
     for i in res:
-        print("{}: ({}) {}".format(i.name, i.id, i.name))
+        print("{}: ({}) {}".format(i.name, i.id, i.City.name))
